@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vulli Narayana Tuitions | Quality Education Since 2005</title>
+
+  <meta name="description" content="Vulli Narayana Tuitions – Premier coaching for IIT, NEET, EAPCET, Classes 1–10, CBSE, ICSE, NTSE, Olympiad, Sainik & Navodaya. Enroll today." />
+  <meta name="keywords" content="tuition center, IIT foundation, NEET coaching, EAPCET, CBSE, ICSE, NTSE, Olympiad, Sainik school, Navodaya, Hyderabad" />
+  <meta name="author" content="Vulli Narayana Tuitions" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Vulli Narayana Tuitions | Quality Education Since 2005" />
+  <meta property="og:description" content="Premier coaching center for IIT, NEET, EAPCET, and Classes 1–10 in Hyderabad." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    /* ── TOKENS ─────────────────────────────── */
+    :root {
+      --navy:      #0A1931;
+      --navy-mid:  #112244;
+      --blue:      #1A5CCC;
+      --blue-lt:   #2E74E8;
+      --red:       #C0392B;
+      --white:     #FFFFFF;
+      --off:       #F7F8FA;
+      --border:    #E2E6EE;
+      --text:      #1A1F2E;
+      --muted:     #6B7280;
+      --light-txt: #9CA3AF;
+      --sans:      'Poppins', sans-serif;
+      --serif:     'Playfair Display', serif;
+      --r:         6px;
+      --r-lg:      10px;
+      --sh:        0 2px 12px rgba(10,25,49,.08);
+      --sh-hover:  0 8px 32px rgba(10,25,49,.14);
+      --tr:        all .25s ease;
+    }
+
+    /* ── RESET ─────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--white); color: var(--text); overflow-x: hidden; line-height: 1.6; font-size: 15px; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; border: none; outline: none; font-family: inherit; }
+    input, textarea, select { font-family: inherit; outline: none; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--off); }
+    ::-webkit-scrollbar-thumb { background: var(--navy); border-radius: 3px; }
+
+    /* ── LAYOUT ────────────────────────────── */
+    .container { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+    .section { padding: 90px 0; }
+    .section-bg { background: var(--off); }
+
+    /* ── TYPOGRAPHY ────────────────────────── */
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 7px;
+      font-size: .72rem; font-weight: 700; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--blue);
+      margin-bottom: 12px;
+    }
+    .eyebrow::before {
+      content: ''; display: block;
+      width: 28px; height: 2px; background: var(--blue);
+    }
+    h1, h2, h3 { font-family: var(--serif); line-height: 1.15; color: var(--navy); }
+    h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+    h2 { font-size: clamp(1.75rem, 3.5vw, 2.4rem); }
+    h3 { font-size: 1.08rem; }
+    .lead { font-size: 1.02rem; color: var(--muted); line-height: 1.8; }
+    .center { text-align: center; }
+    .center .lead { margin: 0 auto; max-width: 580px; }
+
+    /* ── DIVIDER ───────────────────────────── */
+    .rule { width: 48px; height: 3px; background: var(--blue); border-radius: 2px; margin: 14px 0 22px; }
+    .center .rule { margin: 14px auto 22px; }
+
+    /* ── BUTTONS ───────────────────────────── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 9px;
+      padding: 13px 26px; border-radius: var(--r);
+      font-size: .87rem; font-weight: 600; letter-spacing: .3px;
+      transition: var(--tr); cursor: pointer;
+    }
+    .btn-navy { background: var(--navy); color: var(--white); border: 2px solid var(--navy); }
+    .btn-navy:hover { background: var(--navy-mid); box-shadow: var(--sh-hover); transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--navy); border: 2px solid var(--navy); }
+    .btn-outline:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); }
+    .btn-blue { background: var(--blue); color: var(--white); border: 2px solid var(--blue); }
+    .btn-blue:hover { background: var(--blue-lt); border-color: var(--blue-lt); transform: translateY(-2px); box-shadow: var(--sh-hover); }
+    .btn-wa { background: #25D366; color: var(--white); border: 2px solid #25D366; }
+    .btn-wa:hover { background: #1ebe5d; border-color: #1ebe5d; transform: translateY(-2px); }
+
+    /* ── REVEAL ────────────────────────────── */
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    .reveal-l { opacity: 0; transform: translateX(-32px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal-l.in { opacity: 1; transform: none; }
+    .reveal-r { opacity: 0; transform: translateX(32px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal-r.in { opacity: 1; transform: none; }
+
+    /* ══════════════════════════════════════════
+       TOPBAR
+    ══════════════════════════════════════════ */
+    #topbar {
+      background: var(--navy); color: rgba(255,255,255,.75);
+      font-size: .75rem; padding: 8px 0;
+    }
+    .topbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 8px;
+    }
+    .topbar-inner a { color: rgba(255,255,255,.75); transition: var(--tr); }
+    .topbar-inner a:hover { color: white; }
+    .topbar-left, .topbar-right { display: flex; align-items: center; gap: 20px; }
+    .topbar-left span, .topbar-right span { display: flex; align-items: center; gap: 6px; }
+    .topbar-left i, .topbar-right i { color: #5B9BF8; font-size: .72rem; }
+
+    /* ══════════════════════════════════════════
+       NAVBAR
+    ══════════════════════════════════════════ */
+    #navbar {
+      position: sticky; top: 0; z-index: 900;
+      background: var(--white);
+      border-bottom: 2px solid var(--navy);
+      box-shadow: 0 2px 8px rgba(0,0,0,.06);
+      transition: var(--tr);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 0;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 13px; }
+    .nav-logo-mark {
+      width: 46px; height: 46px; border-radius: var(--r);
+      background: var(--navy);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .nav-logo-mark i { color: white; font-size: 1.25rem; }
+    .nav-logo-text .top-line { font-size: .65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); }
+    .nav-logo-text .bot-line { font-family: var(--serif); font-size: 1.05rem; color: var(--navy); line-height: 1.1; }
+    .nav-logo-text .bot-line span { color: var(--blue); }
+    nav ul { display: flex; align-items: center; gap: 28px; }
+    nav ul a { font-size: .84rem; font-weight: 600; color: var(--muted); transition: var(--tr); letter-spacing: .2px; position: relative; padding-bottom: 3px; }
+    nav ul a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--navy); transition: var(--tr); }
+    nav ul a:hover, nav ul a.active { color: var(--navy); }
+    nav ul a:hover::after, nav ul a.active::after { width: 100%; }
+    .nav-right { display: flex; align-items: center; gap: 10px; }
+    .nav-right .btn { padding: 10px 20px; font-size: .8rem; }
+    .hamburger { display: none; flex-direction: column; gap: 5px; background: none; padding: 6px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 2px; transition: var(--tr); }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: fixed; inset: 0; z-index: 950;
+      background: white; flex-direction: column;
+      align-items: flex-start; padding: 100px 32px 40px;
+      gap: 0; overflow-y: auto;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a { font-size: 1.15rem; font-weight: 600; color: var(--navy); padding: 14px 0; border-bottom: 1px solid var(--border); width: 100%; }
+    .mobile-menu .btn { margin-top: 24px; width: 100%; justify-content: center; }
+    .mm-close {
+      position: absolute; top: 18px; right: 20px;
+      width: 40px; height: 40px;
+      background: var(--off); border: 1px solid var(--border);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: var(--navy); cursor: pointer;
+      transition: var(--tr); z-index: 960;
+    }
+    .mm-close:hover { background: var(--navy); color: white; border-color: var(--navy); }
+
+    /* ══════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════ */
+    #hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+      position: relative;
+    }
+    /* Subtle ruled paper lines on right column */
+    .hero-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 86vh; align-items: center; gap: 0;
+    }
+    .hero-left { padding: 80px 60px 80px 0; }
+    .hero-left .eyebrow { margin-bottom: 18px; }
+    .hero-left h1 { margin-bottom: 20px; }
+    .hero-left .lead { margin-bottom: 36px; max-width: 440px; }
+    .hero-btns { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 50px; }
+    .hero-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 0; border: 1px solid var(--border); border-radius: var(--r); overflow: hidden; }
+    .hs { padding: 18px 14px; border-right: 1px solid var(--border); text-align: center; }
+    .hs:last-child { border-right: none; }
+    .hs .n { font-family: var(--serif); font-size: 1.7rem; color: var(--navy); font-weight: 800; line-height: 1; }
+    .hs .l { font-size: .68rem; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+
+    .hero-right {
+      background: var(--navy);
+      height: 100%; min-height: 86vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 60px 50px;
+      position: relative; overflow: hidden;
+    }
+    .hero-right::before {
+      content: '';
+      position: absolute; top: -80px; right: -80px;
+      width: 320px; height: 320px;
+      border-radius: 50%;
+      border: 60px solid rgba(255,255,255,.04);
+    }
+    .hero-right::after {
+      content: '';
+      position: absolute; bottom: -60px; left: -60px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      border: 40px solid rgba(255,255,255,.04);
+    }
+    .hero-card {
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--r-lg);
+      padding: 40px 36px;
+      text-align: center;
+      color: white;
+      width: 100%; max-width: 340px;
+      position: relative; z-index: 1;
+    }
+    .hero-card .hc-badge {
+      display: inline-block;
+      background: var(--blue); color: white;
+      font-size: .7rem; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 14px;
+      border-radius: 3px; margin-bottom: 22px;
+    }
+    .hero-card .hc-logo {
+      width: 72px; height: 72px; background: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px; font-size: 1.8rem; color: var(--navy);
+    }
+    .hero-card h3 {
+      font-family: var(--serif); font-size: 1.15rem; color: white;
+      margin-bottom: 8px;
+    }
+    .hero-card p { font-size: .78rem; color: rgba(255,255,255,.6); margin-bottom: 22px; line-height: 1.6; }
+    .hero-card .stars { color: #FBBF24; font-size: .85rem; letter-spacing: 3px; margin-bottom: 22px; }
+    .info-chips { display: flex; flex-direction: column; gap: 10px; margin-top: 0; }
+    .info-chip {
+      display: flex; align-items: center; gap: 10px;
+      background: rgba(255,255,255,.07); border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--r); padding: 11px 14px;
+      font-size: .78rem; color: rgba(255,255,255,.85);
+    }
+    .info-chip i { color: #5B9BF8; width: 16px; text-align: center; flex-shrink: 0; }
+
+    /* ══════════════════════════════════════════
+       ABOUT
+    ══════════════════════════════════════════ */
+    #about .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 72px; align-items: center; margin-top: 60px;
+    }
+    .about-img {
+      aspect-ratio: 4/3;
+      background: var(--navy);
+      border-radius: var(--r-lg);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,.15); font-size: 4rem;
+      position: relative; overflow: hidden;
+    }
+    .about-img .corner-badge {
+      position: absolute; bottom: 20px; left: 20px;
+      background: var(--blue); color: white;
+      padding: 14px 20px; border-radius: var(--r);
+      text-align: center;
+    }
+    .about-img .corner-badge .num { font-family: var(--serif); font-size: 1.8rem; line-height: 1; }
+    .about-img .corner-badge .lbl { font-size: .66rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; opacity: .8; }
+    .about-content .lead { margin-bottom: 28px; }
+    .mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; }
+    .mv-item {
+      border: 1px solid var(--border); border-radius: var(--r);
+      padding: 18px 16px; transition: var(--tr);
+    }
+    .mv-item:hover { border-color: var(--navy); box-shadow: var(--sh); transform: translateY(-2px); }
+    .mv-item i { color: var(--blue); font-size: 1.1rem; margin-bottom: 8px; display: block; }
+    .mv-item h4 { font-family: var(--serif); font-size: .95rem; color: var(--navy); margin-bottom: 5px; }
+    .mv-item p { font-size: .77rem; color: var(--muted); line-height: 1.5; }
+
+    .stats-band { background: var(--navy); padding: 48px 0; margin-top: 72px; }
+    .stats-band .stats-inner { display: grid; grid-template-columns: repeat(4,1fr); }
+    .band-stat {
+      text-align: center; padding: 20px;
+      border-right: 1px solid rgba(255,255,255,.1);
+    }
+    .band-stat:last-child { border-right: none; }
+    .band-stat .icon { font-size: 1.3rem; color: #5B9BF8; margin-bottom: 10px; }
+    .band-stat .n { font-family: var(--serif); font-size: 2rem; color: white; line-height: 1; }
+    .band-stat .l { font-size: .72rem; font-weight: 600; color: rgba(255,255,255,.5); text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }
+
+    /* ══════════════════════════════════════════
+       COURSES
+    ══════════════════════════════════════════ */
+    #courses .courses-header { margin-bottom: 52px; }
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+      gap: 20px;
+    }
+    .course-card {
+      border: 1px solid var(--border); border-radius: var(--r-lg);
+      padding: 28px 24px; background: var(--white);
+      transition: var(--tr); position: relative; overflow: hidden;
+    }
+    .course-card::before {
+      content: ''; position: absolute; top: 0; left: 0;
+      width: 4px; height: 100%; background: transparent;
+      transition: var(--tr);
+    }
+    .course-card:hover { box-shadow: var(--sh-hover); transform: translateY(-4px); border-color: transparent; }
+    .course-card:hover::before { background: var(--navy); }
+    .c-icon {
+      width: 48px; height: 48px; border-radius: var(--r);
+      background: var(--off); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: var(--navy); margin-bottom: 18px;
+      transition: var(--tr);
+    }
+    .course-card:hover .c-icon { background: var(--navy); color: white; border-color: var(--navy); }
+    .course-card h3 { font-size: .98rem; margin-bottom: 8px; }
+    .course-card p { font-size: .78rem; color: var(--muted); line-height: 1.6; margin-bottom: 14px; }
+    .c-tags { display: flex; flex-wrap: wrap; gap: 5px; }
+    .c-tag {
+      font-size: .64rem; font-weight: 700; letter-spacing: .5px;
+      text-transform: uppercase; padding: 3px 9px;
+      background: var(--off); border: 1px solid var(--border);
+      border-radius: 3px; color: var(--muted);
+    }
+    .course-card:hover .c-tag { background: #EEF3FF; border-color: #C7D7F8; color: var(--blue); }
+
+    /* ══════════════════════════════════════════
+       GALLERY
+    ══════════════════════════════════════════ */
+    #gallery .gallery-header { margin-bottom: 48px; }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-auto-rows: 220px; gap: 14px;
+    }
+    .g-item {
+      position: relative; overflow: hidden;
+      border-radius: var(--r-lg); cursor: pointer;
+      border: 1px solid var(--border);
+    }
+    .g-item:nth-child(1) { grid-row: span 2; }
+    .g-item:nth-child(4) { grid-column: span 2; }
+    .g-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+    .g-item:hover img { transform: scale(1.06); }
+    .g-overlay {
+      position: absolute; inset: 0;
+      background: rgba(10,25,49,.55);
+      opacity: 0; transition: var(--tr);
+      display: flex; align-items: flex-end; padding: 16px;
+    }
+    .g-item:hover .g-overlay { opacity: 1; }
+    .g-overlay span { font-size: .78rem; font-weight: 600; color: white; }
+    #lightbox {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.88); z-index: 9999;
+      align-items: center; justify-content: center;
+    }
+    #lightbox.open { display: flex; }
+    #lightbox img { max-width: 88vw; max-height: 80vh; border-radius: var(--r-lg); }
+    #lb-close {
+      position: absolute; top: 20px; right: 28px;
+      color: white; font-size: 1.8rem; cursor: pointer; transition: var(--tr);
+    }
+    #lb-close:hover { color: #5B9BF8; }
+
+    /* ══════════════════════════════════════════
+       ADMISSIONS
+    ══════════════════════════════════════════ */
+    #admissions .adm-grid {
+      display: grid; grid-template-columns: 1fr 1.25fr;
+      gap: 64px; align-items: start;
+    }
+    .adm-info .lead { margin-bottom: 28px; }
+    .why-list { display: flex; flex-direction: column; gap: 12px; }
+    .why-item {
+      display: flex; gap: 13px; align-items: flex-start;
+      padding: 15px 16px; border: 1px solid var(--border);
+      border-radius: var(--r); transition: var(--tr);
+      background: var(--white);
+    }
+    .why-item:hover { border-color: var(--navy); box-shadow: var(--sh); }
+    .why-item i { color: var(--blue); margin-top: 2px; font-size: 1rem; flex-shrink: 0; }
+    .why-item h4 { font-family: var(--serif); font-size: .9rem; color: var(--navy); margin-bottom: 3px; }
+    .why-item p { font-size: .76rem; color: var(--muted); }
+
+    .adm-form {
+      background: var(--off); border: 1px solid var(--border);
+      border-radius: var(--r-lg); padding: 36px 32px;
+    }
+    .adm-form .form-head { font-family: var(--serif); font-size: 1.25rem; color: var(--navy); margin-bottom: 6px; }
+    .adm-form .form-sub { font-size: .8rem; color: var(--muted); margin-bottom: 28px; }
+    .fg { margin-bottom: 18px; }
+    .fg label { display: block; font-size: .75rem; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+    .fg input, .fg textarea, .fg select {
+      width: 100%; padding: 12px 14px;
+      border: 1px solid var(--border); border-radius: var(--r);
+      background: white; font-size: .88rem; color: var(--text);
+      transition: var(--tr);
+    }
+    .fg input:focus, .fg textarea:focus, .fg select:focus {
+      border-color: var(--navy); box-shadow: 0 0 0 3px rgba(10,25,49,.08);
+    }
+    .fg textarea { min-height: 90px; resize: vertical; }
+    .fg select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 12px; }
+    .fg select option { background: white; color: var(--text); }
+    .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .ferr { font-size: .72rem; color: #DC2626; margin-top: 4px; display: none; }
+    .ferr.show { display: block; }
+    .btn-submit { width: 100%; padding: 14px; font-size: .9rem; font-weight: 700; border-radius: var(--r); }
+
+    /* Success popup */
+    #success-popup {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,.55); z-index: 9999;
+      align-items: center; justify-content: center;
+    }
+    #success-popup.open { display: flex; }
+    .sp-box {
+      background: white; border-radius: var(--r-lg);
+      padding: 48px 40px; text-align: center; max-width: 400px;
+      animation: spIn .35s ease; box-shadow: 0 24px 60px rgba(0,0,0,.18);
+    }
+    @keyframes spIn { from { transform: scale(.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .sp-icon {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--navy); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; margin: 0 auto 20px;
+    }
+    .sp-box h3 { font-family: var(--serif); font-size: 1.4rem; color: var(--navy); margin-bottom: 10px; }
+    .sp-box p { font-size: .85rem; color: var(--muted); margin-bottom: 24px; line-height: 1.7; }
+
+    /* ══════════════════════════════════════════
+       CONTACT
+    ══════════════════════════════════════════ */
+    #contact .contact-grid { display: grid; grid-template-columns: 1fr 1.6fr; gap: 40px; align-items: start; }
+    .contact-cards { display: flex; flex-direction: column; gap: 12px; }
+    .cc {
+      display: flex; gap: 14px; align-items: flex-start;
+      border: 1px solid var(--border); border-radius: var(--r);
+      padding: 18px 16px; background: white; transition: var(--tr);
+    }
+    .cc:hover { border-color: var(--navy); box-shadow: var(--sh); }
+    .cc .ci {
+      width: 42px; height: 42px; border-radius: var(--r);
+      background: var(--navy); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .95rem; flex-shrink: 0;
+    }
+    .cc h4 { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 4px; }
+    .cc p { font-size: .87rem; font-weight: 500; color: var(--navy); }
+    .social-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; }
+    .sb {
+      width: 38px; height: 38px; border-radius: var(--r);
+      background: var(--off); border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: .9rem; color: var(--muted); transition: var(--tr);
+    }
+    .sb:hover { background: var(--navy); color: white; border-color: var(--navy); transform: translateY(-2px); }
+    .map-box {
+      border: 1px solid var(--border); border-radius: var(--r-lg);
+      overflow: hidden; min-height: 340px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--off); flex-direction: column; gap: 12px;
+      color: var(--muted);
+    }
+    .map-box i { font-size: 2.5rem; color: var(--border); }
+    .map-box p { font-size: .82rem; }
+
+    /* ══════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════ */
+    #footer { background: var(--navy); padding: 64px 0 28px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 48px; }
+    .footer-brand .desc { font-size: .8rem; color: rgba(255,255,255,.5); line-height: 1.8; max-width: 250px; margin-top: 14px; }
+    .footer-brand .nav-logo-text .top-line { color: rgba(255,255,255,.4); }
+    .footer-brand .nav-logo-text .bot-line { color: white; }
+    .footer-brand .nav-logo-text .bot-line span { color: #5B9BF8; }
+    .footer-brand .nav-logo-mark { background: rgba(255,255,255,.1); }
+    .fc h5 { font-size: .75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: rgba(255,255,255,.4); margin-bottom: 18px; }
+    .fc ul { display: flex; flex-direction: column; gap: 9px; }
+    .fc ul a { font-size: .8rem; color: rgba(255,255,255,.6); transition: var(--tr); }
+    .fc ul a:hover { color: white; padding-left: 5px; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.1); padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px;
+    }
+    .footer-bottom p { font-size: .77rem; color: rgba(255,255,255,.4); }
+    .footer-bottom .social-row .sb { background: rgba(255,255,255,.06); border-color: rgba(255,255,255,.1); color: rgba(255,255,255,.5); }
+    .footer-bottom .social-row .sb:hover { background: white; color: var(--navy); }
+
+    /* ══════════════════════════════════════════
+       FLOATING BUTTONS
+    ══════════════════════════════════════════ */
+    .floaters { position: fixed; bottom: 28px; right: 28px; display: flex; flex-direction: column; gap: 10px; z-index: 800; }
+    .fl {
+      width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem; color: white; text-decoration: none;
+      box-shadow: 0 4px 16px rgba(0,0,0,.2); transition: var(--tr);
+      position: relative;
+    }
+    .fl:hover { transform: scale(1.1) translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+    .fl-wa { background: #25D366; }
+    .fl-call { background: var(--navy); }
+    .fl .tip {
+      position: absolute; right: 60px; top: 50%; transform: translateY(-50%);
+      background: var(--navy); color: white; font-size: .72rem; font-weight: 600;
+      padding: 5px 11px; border-radius: 4px; white-space: nowrap;
+      opacity: 0; pointer-events: none; transition: var(--tr);
+    }
+    .fl:hover .tip { opacity: 1; }
+
+    /* ══════════════════════════════════════════
+       RESPONSIVE
+    ══════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .stats-band .stats-inner { grid-template-columns: repeat(2,1fr); }
+      .band-stat { border-bottom: 1px solid rgba(255,255,255,.1); }
+    }
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 0 40px; text-align: center; }
+      .hero-left .rule { margin: 14px auto 22px; }
+      .hero-left .lead { margin: 0 auto 36px; }
+      .hero-btns { justify-content: center; }
+      .hero-stats { grid-template-columns: repeat(2,1fr); }
+      .hero-right { min-height: 420px; padding: 48px 24px; }
+      #about .about-grid { grid-template-columns: 1fr; }
+      .about-img { display: none; }
+      #admissions .adm-grid { grid-template-columns: 1fr; }
+      #contact .contact-grid { grid-template-columns: 1fr; }
+      nav ul, .nav-right { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 640px) {
+      .section { padding: 64px 0; }
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .g-item:nth-child(1) { grid-row: span 1; }
+      .g-item:nth-child(4) { grid-column: span 1; }
+      .form-row-2 { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .topbar-right { display: none; }
+      .stats-band .stats-inner { grid-template-columns: 1fr 1fr; }
+      .hero-stats { grid-template-columns: repeat(2,1fr); }
+    }
+    @media (max-width: 400px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOPBAR ════════════════════════════════ -->
+<div id="topbar">
+  <div class="container">
+    <div class="topbar-inner">
+      <div class="topbar-left">
+        <span><i class="fas fa-phone-alt"></i> <a href="tel:+919989831499">+91 99898 31499</a></span>
+        <span><i class="fas fa-envelope"></i> <a href="mailto:info@vullinarayana.com">info@vullinarayana.com</a></span>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fas fa-clock"></i> Mon – Sat: 7:00 AM – 8:00 PM</span>
+        <span><i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NAVBAR ════════════════════════════════ -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-mark"><i class="fas fa-graduation-cap"></i></div>
+        <div class="nav-logo-text">
+          <div class="top-line">Est. 2005</div>
+          <div class="bot-line">Vulli <span>Narayana</span> Tuitions</div>
+        </div>
+      </a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://wa.me/919989831499" target="_blank" class="btn btn-outline"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="#admissions" class="btn btn-navy"><i class="fas fa-pen-nib"></i> Enroll Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <button class="mm-close" id="mm-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <a href="#hero" class="mm-link">Home</a>
+  <a href="#about" class="mm-link">About</a>
+  <a href="#courses" class="mm-link">Courses</a>
+  <a href="#gallery" class="mm-link">Gallery</a>
+  <a href="#admissions" class="mm-link">Admissions</a>
+  <a href="#contact" class="mm-link">Contact</a>
+  <a href="#admissions" class="btn btn-navy mm-link">Enroll Now</a>
+</div>
+
+<!-- ══ HERO ══════════════════════════════════ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left -->
+      <div class="hero-left">
+        <div class="eyebrow reveal">Admissions Open 2025–26</div>
+        <h1 class="reveal" style="transition-delay:.08s">Build Your Future<br>With Vulli Narayana<br>Tuitions</h1>
+        <div class="rule reveal" style="transition-delay:.14s"></div>
+        <p class="lead reveal" style="transition-delay:.2s">Excellence in education since 2005. From foundational learning to competitive entrance exams — we guide every student to achieve their highest potential through personalised, result-oriented coaching.</p>
+        <div class="hero-btns reveal" style="transition-delay:.26s">
+          <a href="#admissions" class="btn btn-navy"><i class="fas fa-graduation-cap"></i> Admissions Open</a>
+          <a href="https://wa.me/919989831499" target="_blank" class="btn btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Enquiry</a>
+        </div>
+        <div class="hero-stats reveal" style="transition-delay:.32s">
+          <div class="hs"><div class="n" data-target="5000+">5000+</div><div class="l">Students Trained</div></div>
+          <div class="hs"><div class="n" data-target="15+">15+</div><div class="l">Courses Offered</div></div>
+          <div class="hs"><div class="n" data-target="98%">98%</div><div class="l">Success Rate</div></div>
+          <div class="hs"><div class="n" data-target="20+">20+</div><div class="l">Years of Excellence</div></div>
+        </div>
+      </div>
+      <!-- Right -->
+      <div class="hero-right reveal" style="transition-delay:.18s">
+        <div class="hero-card">
+          <div class="hc-badge">Admissions Open</div>
+          <div class="hc-logo"><i class="fas fa-graduation-cap"></i></div>
+          <h3>Vulli Narayana Tuitions</h3>
+          <p>Your trusted partner in academic excellence. Quality coaching since 2005.</p>
+          <div class="stars">★★★★★</div>
+          <div class="info-chips">
+            <div class="info-chip"><i class="fas fa-atom"></i> IIT &amp; NEET Foundation</div>
+            <div class="info-chip"><i class="fas fa-flask"></i> EAPCET Coaching</div>
+            <div class="info-chip"><i class="fas fa-trophy"></i> NTSE &amp; Olympiad</div>
+            <div class="info-chip"><i class="fas fa-shield-alt"></i> Sainik &amp; Navodaya</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ ABOUT ══════════════════════════════════ -->
+<section id="about" class="section section-bg">
+  <div class="container">
+    <div class="reveal">
+      <div class="eyebrow">About Us</div>
+      <h2>Shaping Bright Minds<br>Since 2005</h2>
+      <div class="rule"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-img reveal-l">
+        <i class="fas fa-school"></i>
+        <div class="corner-badge">
+          <div class="num">20+</div>
+          <div class="lbl">Years of Trust</div>
+        </div>
+      </div>
+      <div class="about-content reveal-r">
+        <p class="lead">Vulli Narayana Tuitions is a premier coaching institute in Hyderabad dedicated to nurturing academic excellence in students from Class 1 through competitive entrance examinations. With a team of highly qualified educators and a student-first philosophy, we deliver result-oriented coaching across State, CBSE, and ICSE curriculums.</p>
+        <p class="lead" style="margin-bottom:0">Our track record speaks for itself — over two decades of consistent results, thousands of successful students, and a reputation built entirely on genuine quality and care.</p>
+        <div class="mv-grid">
+          <div class="mv-item">
+            <i class="fas fa-eye"></i>
+            <h4>Our Vision</h4>
+            <p>To be the region's most trusted institution, empowering every student to achieve their highest academic potential.</p>
+          </div>
+          <div class="mv-item">
+            <i class="fas fa-bullseye"></i>
+            <h4>Our Mission</h4>
+            <p>Deliver quality education through innovation, discipline, and personalised mentorship.</p>
+          </div>
+          <div class="mv-item">
+            <i class="fas fa-heart"></i>
+            <h4>Our Values</h4>
+            <p>Integrity, excellence, and dedication form the cornerstone of everything we do.</p>
+          </div>
+          <div class="mv-item">
+            <i class="fas fa-users"></i>
+            <h4>Community</h4>
+            <p>A supportive learning community where every student is inspired to grow and succeed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Band -->
+<div class="stats-band">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="band-stat reveal">
+        <div class="icon"><i class="fas fa-user-graduate"></i></div>
+        <div class="n counter" data-val="5000" data-sfx="+">5000+</div>
+        <div class="l">Students Trained</div>
+      </div>
+      <div class="band-stat reveal" style="transition-delay:.1s">
+        <div class="icon"><i class="fas fa-book-open"></i></div>
+        <div class="n counter" data-val="15" data-sfx="+">15+</div>
+        <div class="l">Courses Offered</div>
+      </div>
+      <div class="band-stat reveal" style="transition-delay:.2s">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <div class="n counter" data-val="98" data-sfx="%">98%</div>
+        <div class="l">Success Rate</div>
+      </div>
+      <div class="band-stat reveal" style="transition-delay:.3s">
+        <div class="icon"><i class="fas fa-award"></i></div>
+        <div class="n counter" data-val="20" data-sfx="+">20+</div>
+        <div class="l">Years of Excellence</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ COURSES ════════════════════════════════ -->
+<section id="courses" class="section">
+  <div class="container">
+    <div class="courses-header reveal">
+      <div class="eyebrow">Our Courses</div>
+      <h2>Programs Designed<br>for Every Goal</h2>
+      <div class="rule"></div>
+      <p class="lead" style="max-width:560px">From foundational learning to competitive entrance preparation — we have a course tailored for every stage of your academic journey.</p>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card reveal" style="transition-delay:0s">
+        <div class="c-icon"><i class="fas fa-atom"></i></div>
+        <h3>IIT &amp; NEET Foundation</h3>
+        <p>Early preparation for JEE and NEET with concept clarity, problem solving, and analytical skill development from the ground up.</p>
+        <div class="c-tags"><span class="c-tag">JEE</span><span class="c-tag">NEET</span><span class="c-tag">Foundation</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.05s">
+        <div class="c-icon"><i class="fas fa-child"></i></div>
+        <h3>Classes 1–10</h3>
+        <p>Comprehensive subject coaching for all classes with a focus on conceptual understanding and exam readiness.</p>
+        <div class="c-tags"><span class="c-tag">All Subjects</span><span class="c-tag">Class 1–10</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.1s">
+        <div class="c-icon"><i class="fas fa-school"></i></div>
+        <h3>State, CBSE &amp; ICSE</h3>
+        <p>Expert coaching aligned with State Board, CBSE, and ICSE syllabuses with curated material and regular mock tests.</p>
+        <div class="c-tags"><span class="c-tag">State</span><span class="c-tag">CBSE</span><span class="c-tag">ICSE</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.15s">
+        <div class="c-icon"><i class="fas fa-flask"></i></div>
+        <h3>IIT, NEET &amp; EAPCET</h3>
+        <p>Intensive coaching for engineering and medical entrance exams including IIT JEE, NEET, and TS/AP EAPCET.</p>
+        <div class="c-tags"><span class="c-tag">IIT</span><span class="c-tag">NEET</span><span class="c-tag">EAPCET</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.2s">
+        <div class="c-icon"><i class="fas fa-trophy"></i></div>
+        <h3>NTSE &amp; Olympiad</h3>
+        <p>Specialised preparation for the National Talent Search Exam and Science / Math Olympiads to unlock scholarship opportunities.</p>
+        <div class="c-tags"><span class="c-tag">NTSE</span><span class="c-tag">Olympiad</span><span class="c-tag">Scholarship</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.25s">
+        <div class="c-icon"><i class="fas fa-industry"></i></div>
+        <h3>POLYCET / Agri POLYCET / ITI</h3>
+        <p>Focused coaching for Polytechnic, Agricultural Polytechnic, and ITI entrance examinations with full practice sets.</p>
+        <div class="c-tags"><span class="c-tag">POLYCET</span><span class="c-tag">Agri</span><span class="c-tag">ITI</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.3s">
+        <div class="c-icon"><i class="fas fa-seedling"></i></div>
+        <h3>Fundamentals Basics Special</h3>
+        <p>A specially designed course to strengthen core basics in Mathematics and Sciences for beginners and slow learners.</p>
+        <div class="c-tags"><span class="c-tag">Basics</span><span class="c-tag">Special Batch</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.35s">
+        <div class="c-icon"><i class="fas fa-microscope"></i></div>
+        <h3>MPC &amp; BiPC IPE / Objectives</h3>
+        <p>Intermediate coaching for MPC and BiPC covering IPE examinations and objectives for competitive entrance preparation.</p>
+        <div class="c-tags"><span class="c-tag">MPC</span><span class="c-tag">BiPC</span><span class="c-tag">IPE</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.4s">
+        <div class="c-icon"><i class="fas fa-laptop"></i></div>
+        <h3>MS Office &amp; Spoken English</h3>
+        <p>Practical computer skills and spoken English training to enhance career readiness alongside academic preparation.</p>
+        <div class="c-tags"><span class="c-tag">MS Office</span><span class="c-tag">English</span><span class="c-tag">Skills</span></div>
+      </div>
+      <div class="course-card reveal" style="transition-delay:.45s">
+        <div class="c-icon"><i class="fas fa-shield-alt"></i></div>
+        <h3>Sainik &amp; Navodaya</h3>
+        <p>Targeted preparation for Sainik School and Navodaya Vidyalaya entrance exams with rigorous mock tests and coaching.</p>
+        <div class="c-tags"><span class="c-tag">Sainik</span><span class="c-tag">Navodaya</span><span class="c-tag">Entrance</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ GALLERY ════════════════════════════════ -->
+<section id="gallery" class="section section-bg">
+  <div class="container">
+    <div class="gallery-header reveal">
+      <div class="eyebrow">Gallery</div>
+      <h2>A Glimpse of Campus Life</h2>
+      <div class="rule"></div>
+      <p class="lead" style="max-width:520px">Explore our vibrant classrooms, events, and the community that makes learning truly memorable.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item reveal" data-src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80" alt="Classroom Sessions" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Classroom Sessions</span></div>
+      </div>
+      <div class="g-item reveal" style="transition-delay:.08s" data-src="https://images.unsplash.com/photo-1532094349884-543559059a6e?w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1532094349884-543559059a6e?w=600&q=80" alt="Science Lab" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Science Lab</span></div>
+      </div>
+      <div class="g-item reveal" style="transition-delay:.16s" data-src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80" alt="Student Activities" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Student Activities</span></div>
+      </div>
+      <div class="g-item reveal" style="transition-delay:.24s" data-src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=900&q=80">
+        <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?w=900&q=80" alt="Awards" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Awards &amp; Recognition</span></div>
+      </div>
+      <div class="g-item reveal" style="transition-delay:.32s" data-src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80" alt="Faculty" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Expert Faculty</span></div>
+      </div>
+      <div class="g-item reveal" style="transition-delay:.4s" data-src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80">
+        <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80" alt="Annual Function" loading="lazy" />
+        <div class="g-overlay"><span><i class="fas fa-expand-alt"></i> &nbsp;Annual Function</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="lightbox">
+  <span id="lb-close"><i class="fas fa-times"></i></span>
+  <img id="lb-img" src="" alt="Gallery image" />
+</div>
+
+<!-- ══ ADMISSIONS ═════════════════════════════ -->
+<section id="admissions" class="section">
+  <div class="container">
+    <div class="adm-grid">
+      <!-- Left -->
+      <div class="adm-info reveal-l">
+        <div class="eyebrow">Admissions</div>
+        <h2>Begin Your Journey<br>With Us Today</h2>
+        <div class="rule"></div>
+        <p class="lead">Taking the first step toward academic excellence starts here. Fill in your details and our counsellors will reach you within 24 hours to guide you through the admission process.</p>
+        <div class="why-list">
+          <div class="why-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h4>Expert Faculty</h4>
+              <p>Experienced educators with a proven track record of producing consistent toppers.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h4>Personalised Attention</h4>
+              <p>Small batch sizes ensuring every student receives individual focus and guidance.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h4>Comprehensive Study Material</h4>
+              <p>Topic-wise notes, question banks, and regular mock tests all included.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <i class="fas fa-check-circle"></i>
+            <div>
+              <h4>Proven Results</h4>
+              <p>Consistently high pass percentages across all courses and competitive examinations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Right Form -->
+      <div class="adm-form reveal-r">
+        <div class="form-head">Apply Now</div>
+        <div class="form-sub">Free counselling session for all applicants. No obligations.</div>
+        <form id="adm-form" novalidate>
+          <div class="form-row-2">
+            <div class="fg">
+              <label for="f-sname">Student Name <span style="color:#DC2626">*</span></label>
+              <input type="text" id="f-sname" placeholder="Full name" autocomplete="off" />
+              <div class="ferr" id="e-sname">Please enter the student's name.</div>
+            </div>
+            <div class="fg">
+              <label for="f-pname">Parent Name <span style="color:#DC2626">*</span></label>
+              <input type="text" id="f-pname" placeholder="Parent / guardian name" autocomplete="off" />
+              <div class="ferr" id="e-pname">Please enter the parent's name.</div>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="f-phone">Phone Number <span style="color:#DC2626">*</span></label>
+            <input type="tel" id="f-phone" placeholder="10-digit mobile number" autocomplete="off" />
+            <div class="ferr" id="e-phone">Please enter a valid 10-digit phone number.</div>
+          </div>
+          <div class="form-row-2">
+            <div class="fg">
+              <label for="f-class">Class <span style="color:#DC2626">*</span></label>
+              <select id="f-class">
+                <option value="">Select class</option>
+                <option>Class 1</option><option>Class 2</option><option>Class 3</option>
+                <option>Class 4</option><option>Class 5</option><option>Class 6</option>
+                <option>Class 7</option><option>Class 8</option><option>Class 9</option>
+                <option>Class 10</option><option>Class 11 (MPC)</option>
+                <option>Class 11 (BiPC)</option><option>Class 12 (MPC)</option>
+                <option>Class 12 (BiPC)</option>
+              </select>
+              <div class="ferr" id="e-class">Please select a class.</div>
+            </div>
+            <div class="fg">
+              <label for="f-course">Course Interested <span style="color:#DC2626">*</span></label>
+              <select id="f-course">
+                <option value="">Select course</option>
+                <option>IIT &amp; NEET Foundation</option>
+                <option>Classes 1–10 (General)</option>
+                <option>State / CBSE / ICSE</option>
+                <option>IIT / NEET / EAPCET</option>
+                <option>NTSE &amp; Olympiad</option>
+                <option>POLYCET / Agri POLYCET / ITI</option>
+                <option>Fundamentals Basics Special</option>
+                <option>MPC &amp; BiPC IPE / Objectives</option>
+                <option>MS Office &amp; Spoken English</option>
+                <option>Sainik &amp; Navodaya</option>
+              </select>
+              <div class="ferr" id="e-course">Please select a course.</div>
+            </div>
+          </div>
+          <div class="fg">
+            <label for="f-msg">Message <span style="color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0">(optional)</span></label>
+            <textarea id="f-msg" placeholder="Any specific requirements or questions?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-wa btn-submit">
+            <i class="fab fa-whatsapp"></i> Send via WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Popup -->
+<div id="success-popup">
+  <div class="sp-box">
+    <div class="sp-icon" style="background:#25D366"><i class="fab fa-whatsapp"></i></div>
+    <h3>Redirecting to WhatsApp!</h3>
+    <p>Your application details have been prepared. WhatsApp will open with a pre-filled message — just tap <strong>Send</strong> to submit your enquiry to us.</p>
+    <button class="btn btn-navy" onclick="closeSP()" style="width:100%;justify-content:center">
+      <i class="fas fa-home"></i> Back to Home
+    </button>
+  </div>
+</div>
+
+<!-- ══ CONTACT ════════════════════════════════ -->
+<section id="contact" class="section section-bg">
+  <div class="container">
+    <div class="contact-header reveal" style="margin-bottom:48px">
+      <div class="eyebrow">Contact Us</div>
+      <h2>We're Here to Help You</h2>
+      <div class="rule"></div>
+      <p class="lead" style="max-width:480px">Reach out to us anytime. We're happy to answer queries about admissions, courses, and schedules.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-cards">
+        <div class="cc reveal">
+          <div class="ci"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <h4>Address</h4>
+            <p>123, Main Road, Near Bus Stand,<br>Hyderabad, Telangana – 500001</p>
+          </div>
+        </div>
+        <div class="cc reveal" style="transition-delay:.1s">
+          <div class="ci"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+919989831499" style="color:inherit">+91 99898 31499</a></p>
+          </div>
+        </div>
+        <div class="cc reveal" style="transition-delay:.2s">
+          <div class="ci"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:info@vullinarayana.com" style="color:inherit">info@vullinarayana.com</a></p>
+          </div>
+        </div>
+        <div class="cc reveal" style="transition-delay:.3s">
+          <div class="ci"><i class="fas fa-clock"></i></div>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Mon – Sat: 7:00 AM – 8:00 PM</p>
+          </div>
+        </div>
+        <div class="reveal" style="transition-delay:.4s">
+          <div class="social-row">
+            <a href="#" class="sb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="sb" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="sb" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919989831499" class="sb" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="sb" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="map-box reveal-r" style="padding:0;overflow:hidden;border-radius:var(--r-lg);">
+        <iframe
+          src="https://www.google.com/maps?q=18-1-306,+Bhavani+Nagar,+Tirupati,+Andhra+Pradesh+517501&output=embed"
+          width="100%" height="100%" style="min-height:340px;border:0;display:block;"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Vulli Narayana Tuitions Location">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ════════════════════════════════ -->
+<footer id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="nav-logo-mark"><i class="fas fa-graduation-cap"></i></div>
+          <div class="nav-logo-text">
+            <div class="top-line">Est. 2005</div>
+            <div class="bot-line">Vulli <span>Narayana</span> Tuitions</div>
+          </div>
+        </div>
+        <p class="desc">A premier coaching institute dedicated to academic excellence, guiding students from Class 1 to competitive entrance exams since 2005.</p>
+      </div>
+      <div class="fc">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#courses">Our Courses</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#admissions">Admissions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h5>Courses</h5>
+        <ul>
+          <li><a href="#courses">IIT &amp; NEET Foundation</a></li>
+          <li><a href="#courses">EAPCET Coaching</a></li>
+          <li><a href="#courses">NTSE &amp; Olympiad</a></li>
+          <li><a href="#courses">Sainik &amp; Navodaya</a></li>
+          <li><a href="#courses">MS Office &amp; English</a></li>
+        </ul>
+      </div>
+      <div class="fc">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+919989831499"><i class="fas fa-phone fa-xs" style="color:#5B9BF8;margin-right:7px"></i>+91 99898 31499</a></li>
+          <li><a href="mailto:info@vullinarayana.com"><i class="fas fa-envelope fa-xs" style="color:#5B9BF8;margin-right:7px"></i>info@vullinarayana.com</a></li>
+          <li><a href="#"><i class="fas fa-map-marker-alt fa-xs" style="color:#5B9BF8;margin-right:7px"></i>Hyderabad, Telangana</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Vulli Narayana Tuitions. All rights reserved.</p>
+      <div class="social-row">
+        <a href="#" class="sb"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="sb"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="sb"><i class="fab fa-youtube"></i></a>
+        <a href="https://wa.me/919989831499" class="sb"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ══ FLOATING BUTTONS ═══════════════════════ -->
+<div class="floaters">
+  <a href="tel:+919989831499" class="fl fl-call" aria-label="Call">
+    <i class="fas fa-phone-alt"></i>
+    <span class="tip">Call Us</span>
+  </a>
+  <a href="https://wa.me/919989831499" target="_blank" class="fl fl-wa" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="tip">WhatsApp</span>
+  </a>
+</div>
+
+<!-- ══ JAVASCRIPT ═════════════════════════════ -->
+<script>
+  /* ── Hamburger ─────────────────────────────── */
+  const ham = document.getElementById('hamburger');
+  const mmenu = document.getElementById('mobile-menu');
+  function closeMobileMenu() {
+    ham.classList.remove('open');
+    mmenu.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    mmenu.classList.toggle('open');
+    document.body.style.overflow = mmenu.classList.contains('open') ? 'hidden' : '';
+  });
+  document.getElementById('mm-close').addEventListener('click', closeMobileMenu);
+  document.querySelectorAll('.mm-link').forEach(a => {
+    a.addEventListener('click', closeMobileMenu);
+  });
+
+  /* ── Active nav link ────────────────────────── */
+  const navAs = document.querySelectorAll('nav ul a');
+  const secs = document.querySelectorAll('section[id]');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    secs.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
+    navAs.forEach(a => {
+      a.classList.remove('active');
+      if (a.getAttribute('href') === '#' + cur) a.classList.add('active');
+    });
+  }, { passive: true });
+
+  /* ── Scroll reveal ──────────────────────────── */
+  const ro = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal, .reveal-l, .reveal-r').forEach(el => ro.observe(el));
+  // Trigger hero immediately
+  window.addEventListener('load', () => {
+    document.querySelectorAll('#hero .reveal, #hero .reveal-l, #hero .reveal-r').forEach(el => el.classList.add('in'));
+  });
+
+  /* ── Counter animation ─────────────────────── */
+  const co = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting || e.target.dataset.done) return;
+      e.target.dataset.done = '1';
+      const val = +e.target.dataset.val;
+      const sfx = e.target.dataset.sfx || '';
+      let i = 0;
+      const step = val / 55;
+      const t = setInterval(() => {
+        i += step;
+        if (i >= val) { e.target.textContent = val + sfx; clearInterval(t); return; }
+        e.target.textContent = Math.floor(i) + sfx;
+      }, 22);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.counter').forEach(el => co.observe(el));
+
+  /* ── Lightbox ───────────────────────────────── */
+  const lb = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lb-img');
+  document.querySelectorAll('.g-item').forEach(item => {
+    item.addEventListener('click', () => {
+      lbImg.src = item.dataset.src;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+  document.getElementById('lb-close').addEventListener('click', closeLB);
+  lb.addEventListener('click', e => { if (e.target === lb) closeLB(); });
+  function closeLB() { lb.classList.remove('open'); document.body.style.overflow = ''; }
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLB(); });
+
+  /* ── Form validation + WhatsApp ─────────────── */
+  function ferr(id, show) {
+    const el = document.getElementById(id);
+    if (el) el.classList.toggle('show', show);
+  }
+  document.getElementById('adm-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const sn = document.getElementById('f-sname').value.trim();
+    const pn = document.getElementById('f-pname').value.trim();
+    const ph = document.getElementById('f-phone').value.trim();
+    const cl = document.getElementById('f-class').value;
+    const co = document.getElementById('f-course').value;
+    const mg = document.getElementById('f-msg').value.trim();
+    let ok = true;
+    ferr('e-sname', !sn); if (!sn) ok = false;
+    ferr('e-pname', !pn); if (!pn) ok = false;
+    ferr('e-phone', !/^[6-9]\d{9}$/.test(ph)); if (!/^[6-9]\d{9}$/.test(ph)) ok = false;
+    ferr('e-class', !cl); if (!cl) ok = false;
+    ferr('e-course', !co); if (!co) ok = false;
+    if (ok) {
+      // Build WhatsApp message
+      const msg =
+        `-- Contacted through website --\n\n` +
+        `*New Admission Enquiry*\n` +
+        `━━━━━━━━━━━━━━━━━━━━\n` +
+        `👤 *Student Name:* ${sn}\n` +
+        `👨‍👩‍👦 *Parent Name:* ${pn}\n` +
+        `📞 *Phone:* ${ph}\n` +
+        `🏫 *Class:* ${cl}\n` +
+        `📚 *Course Interested:* ${co}\n` +
+        (mg ? `💬 *Message:* ${mg}\n` : '') +
+        `━━━━━━━━━━━━━━━━━━━━\n` +
+        `_Sent from Vulli Narayana Tuitions website_`;
+
+      const waNumber = '919989831499'; // Replace with actual WhatsApp number
+      const waURL = `https://wa.me/${waNumber}?text=${encodeURIComponent(msg)}`;
+
+      // Show popup briefly then open WhatsApp
+      document.getElementById('success-popup').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      this.reset();
+
+      setTimeout(() => {
+        window.open(waURL, '_blank');
+      }, 1200);
+    }
+  });
+
+  function closeSP() {
+    document.getElementById('success-popup').classList.remove('open');
+    document.body.style.overflow = '';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /* ── Smooth scroll ──────────────────────────── */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const t = document.querySelector(this.getAttribute('href'));
+      if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+</script>
+</body>
+</html>
